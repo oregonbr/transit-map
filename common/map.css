@@ -1,0 +1,212 @@
+.maplibregl-popup {
+     pointer-events: none; 
+
+}
+#map {
+    background: #000;
+}
+.maplibregl-popup-content {
+	touch-action: none;
+}
+
+#map_content{position:absolute;width:100%;height:100%;}
+#map{position:absolute;width:100%;height:100%;}
+#mapContainer{
+	 visibility:hidden;
+	 position:absolute;
+	 width:100%;
+	 height:100%;
+	 align-items: center;
+	 justify-content: center;
+	 display:flex;
+ }
+
+.mainDot{
+	display:flex;
+	justify-content: center;
+	align-items: center;	
+}
+.mainRotContainer{
+	position:absolute;display:inline-flex;align-items: center;
+	svg{
+		position:relative;
+		fill:#ffd227; 
+		height:20px;
+	}
+	
+}
+.mainRotContainer.rail
+{
+	svg{
+		height:14px;
+	}
+}
+.mainVehBody{
+  text-align:center;
+  width:70px;
+  height:20px;
+  position:relative;
+}
+.mainVehDetail{
+	text-align: center;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	line-height: 1.3;
+	display: inline-flex;
+	flex-direction: column;
+}
+.mainVehColor{
+  border: 2px solid black;
+  background-color:white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  p{
+	  white-space: nowrap;
+	  text-align: justify;
+  }
+ }
+
+ .mainVehComponent{
+	position: relative;
+	height:50%;
+	width:100%;
+	text-align:center;
+ }
+.mainVehColor.train{
+	font-size:11px;
+	border-radius:4px;
+	width: 25px;
+	height: 25px;
+	
+}	
+ .textRTTime{color:green;}
+ .stopId{font-size: 10px;}
+ 
+ .mapUIbutton{
+	width:35px;
+	height:35px;
+	padding:3px;
+	background-color: white;
+	border:3px solid orange;
+	border-radius: 7px;
+	display:flex;
+	svg{
+		margin:auto;
+		position:relative;
+		width:90%;
+		height:90%;
+	}
+ }
+
+ @media (max-width: 1024px) {
+	.mapUIPopout{
+		margin:auto;
+		right:auto;
+		width:75%;
+	}
+}
+
+@media (min-width: 480px) {
+  	.mapUIPopout.small{
+		right:50px;
+	}
+	.mapUIPopout.medium{
+		right:50px;
+	}
+}
+
+
+ .mapUIListElement{
+	 padding:6px;
+	 font-size:17px;
+ }
+ .mapUIPopUpContainer{
+	 position:relative;
+	.title{
+		font-size:20px;
+		padding:4px;
+		border-bottom:2px solid white;
+	}
+ }
+ 
+.mapUIListElement:hover{
+		 background-color:red;
+ }
+ .show{display:block;}
+ .hide{display:none;}
+ .mapUIListDisable{background-color:darkgray;color:grey;}
+ 
+ .mapUICheckBox{
+	 position:relative;
+	 display: flex;
+     justify-content: space-between;
+	 padding:3px;
+	 .icon{
+		 width:15px;
+		 height:15px;
+		 border:2px solid black;
+		 border-radius: 4px;
+	 }
+	 .clicked{background-color:blue;}
+	 
+ }
+ .mapUIdropDownButton{
+	 width:100%;
+	 p{
+		 padding:3px;
+		 font-size: 14px;
+		 background-color:white;
+		 border:2px solid black;
+		 svg{
+			 width:10px;
+			 height:10px;
+			 color:black;
+		 }
+	 }
+ }
+ .mapUIDropDownContent{
+	 position:absolute;
+	 background-color: gray;
+	 z-index:1000;
+ }
+ #mapUIsettingsContainer-standardmarker {
+    display: inline-flex;
+	gap:5px;
+	width:calc(100% - 4px);
+	padding:2px;
+ }
+
+ 
+ /* pop up stuff */
+.vehiclePopUp{
+	min-width:110px;
+	.clickable{
+		color:#5aa8db;
+	}
+	.clickable:hover{
+		color:#304ddb;
+	}
+	
+	.tripHead{
+		display:flex;
+		align-items:center;
+		gap:6px;
+		.routeNumber{
+			padding:5px;
+			border-radius:5px;
+			
+		}
+		.basicNumber, .routeNumber{
+			font-size: 15px;
+		}
+	}
+	.nis{
+		font-size: 15px;
+	}
+	.agencyTitle, .vehicleId, .blockId{
+		font-size: 13px;
+	}
+ }
+

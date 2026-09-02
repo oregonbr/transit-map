@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="40"
+     height="40"
+     viewBox="0 0 960 960">
+
+  <g transform="translate(0,960) scale(1,-1)">
+    <path fill="#c9c9c9"
+      d="M268-228h344q34.33 0 57.83-25.83 23.5-25.84 23.5-60.17v-120H186.67v120q0 34.33 23.5 60.17Q233.67-228 268-228Z"/>
+  </g>
+
+</svg>
